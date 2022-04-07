@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body.no-scroll {
+    overflow-y: hidden;
+}
+
+.App {
+    overflow-x: hidden !important;
+    position: relative;
+}
+
+.top-logo {
+    color: #282828;
+    font-size: 28px;
+    left: 40px;
+    position: absolute;
+    top: 34px;
+    z-index: 999;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff5000 !important;
+}
+
+.font-sans {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+
+.font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.white {
+    color: white !important;
+}
+
+@media screen and (max-width: 1239px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-logo {
+        display: none;
+    }
+}
